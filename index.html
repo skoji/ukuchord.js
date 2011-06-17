@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html manifest="chord.manifest">
+  <head>
+	<title>UkuChord</title>
+	<meta charset="UTF-8" />
+	<script type="text/javascript" src="jquery-1.6.1.min.js"></script>
+	<script type="text/javascript" src="ukuchord.js"></script>
+	<script type="text/javascript" src="writechord.js"></script>
+	<link rel="stylesheet" type="text/css" href="uku.css" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+  </head>
+  <body>
+	<div id="main">
+	  <div id="chordname"></div>
+	  <div id="message"></div>
+	  <div id="chordarea">
+		<canvas id="chord" width="280" height="280" style="display: block; margin-left:auto; margin-right:auto;"></canvas>
+	  </div>
+	</div>
+	  <div id="buttons">
+		<input id="changedir" type="button" onclick="direction.toggle()" value="向きを変更" />
+	  </div>
+  </body>
+</html>
+

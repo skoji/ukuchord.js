@@ -1,0 +1,40 @@
+div {
+	padding: 0px;
+}
+
+div#main {
+	width: 100%;
+}
+
+div#chordarea {
+	width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+div#chordname {
+	width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+div#message {
+	width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 2em;
+	color: #880000;
+}
+
+div#buttons {
+	width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	text-align: center;
+}

@@ -1,0 +1,12 @@
+= ukuchord
+
+== DESCRIPTION:
+ 
+JavaScript with canvas library to display ukulele chord, and sample offlline application.
+
+== FEATURES/PROBLEMS
+
+* Chords data is insufficient.
+
+
+
