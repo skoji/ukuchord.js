@@ -1,5 +1,8 @@
 = ukuchord
 
+http://www.skoji.jp/ukuchord
+the sample is deployed on this site.
+
 == DESCRIPTION:
  
 JavaScript with canvas library to display ukulele chord, and sample offlline application.
