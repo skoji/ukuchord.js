@@ -8,7 +8,7 @@ $().ready(
 
 function toggle()
 {
-	if ($("#message").text() == "Challange")
+	if ($("#message").text() == "Challenge")
 		answer();
 	else
 		challange();
@@ -18,7 +18,7 @@ function challange() {
 	$("#chordname").empty()
 	$("#chordname").append(randChord());
 	$("#message").empty()
-	$("#message").append("Challange");
+	$("#message").append("Challenge");
 }
 
 function answer() {
@@ -33,7 +33,7 @@ function chord(chord) {
 	var ctx = canvas.getContext("2d");
 	ctx.clearRect(0,0, canvas.width, canvas.height);
 	ctx.save();
-	ctx.scale(4.8,4.8);
+	ctx.scale(4.6,4.6);
 	ukuChord.draw({ context: ctx, chord: chord, dir: direction.current(), finger: [0,0,0,0]});
 	ctx.restore();
 }
@@ -53,7 +53,7 @@ var direction = (
 			
 			toggle: function () {
 				d == 'vertical'? d = 'horizontal' : d = 'vertical';
-				if ($("#message").text() == 'Challange') {
+				if ($("#message").text() == 'Challenge') {
 					chord();
 				} else {
 					chord($("#chordname").text());
