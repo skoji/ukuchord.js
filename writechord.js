@@ -1,6 +1,6 @@
 $().ready(
 	function() {
-		eventUtil.addTouchEnd(document.getElementById("chordarea"), toggle);
+        $("#chordarea").bind('touchend', toggle);
 		challange();
 	}
 );
@@ -64,29 +64,3 @@ var direction = (
 	}
 )();
 
-var eventUtil = (
-	function() {
-		var TOUCH_ENABLED = (function() {
- 			var div = document.createElement('div');
-   			div.setAttribute('ontouchstart', 'return');
-			return typeof div.ontouchstart == 'function';
-		})();
-		
-		return {
-			removeTouchEnd: function(dom, func) {
-				if (TOUCH_ENABLED) {
-					dom.removeEventListener('touchend', func, false);
-				} else {
-					dom.removeEventListener('mouseup', func, false);
-				}
-			},
-			addTouchEnd: function(dom, func) {
-				if (TOUCH_ENABLED) {
-					dom.addEventListener('touchend', func);
-				} else {
-					dom.addEventListener('mouseup', func);
-				}
-			}
-		}
-	}
-)();
