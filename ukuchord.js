@@ -24,7 +24,6 @@ var ukuChord = (function () {
 		var context = parameter.context;
 		context.strokeStyle = parameter.lineStyle;
 		context.beginPath();
-
 		context.moveTo(0,0);
 		context.lineTo(width,0);
 		context.moveTo(0,topInterval);
